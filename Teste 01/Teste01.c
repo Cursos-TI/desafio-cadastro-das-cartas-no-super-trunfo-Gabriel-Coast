@@ -8,6 +8,8 @@ int main() {
     int pontosTuristicos1, pontosTuristicos2;
     float area1, area2;
     float PIB1, PIB2;
+    float densidadepopulacional1, densidadepopulacional2;
+    float PIBpercapita1, PIBpercapita2;
 
     // Coletando dados para a primeira carta
     printf("Estado 1: ");
@@ -24,6 +26,10 @@ int main() {
     scanf("%f", &PIB1);
     printf("Número de Pontos Turísticos 1: ");
     scanf("%d", &pontosTuristicos1);
+    printf("Densidade populacional 1: ");
+    scanf("%f", &densidadepopulacional1);
+    printf("PIB per capita 1: ");
+    scanf("%f", &PIBpercapita1);
     
     // Coletando dados para a segunda carta
     printf("\nEstado 2: ");
