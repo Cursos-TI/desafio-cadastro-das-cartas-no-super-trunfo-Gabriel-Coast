@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    char estado1[20], estado2[20];
+    char estado1, estado2;
     char codigo1[4], codigo2[4];
     char cidade1[20], cidade2[20];
     int populacao1, populacao2;
@@ -10,6 +10,7 @@ int main() {
     float PIB1, PIB2;
     float densidadepopulacional1, densidadepopulacional2;
     float PIBpercapita1, PIBpercapita2;
+    float SuperPoder1, SuperPoder2;
 
     // Coletando dados para a primeira carta
     printf("Estado 1: ");
@@ -30,6 +31,7 @@ int main() {
     // Cálculos
     densidadepopulacional1 = populacao1 / area1;
     PIBpercapita1 = (PIB1 * 1e9) / populacao1; // Convertendo PIB de bilhões para reais
+    SuperPoder1 = populacao1 + area1 + PIB1 + pontosTuristicos1 + PIBpercapita1 + densidadepopulacional1;
 
     // Coletando dados para a segunda carta
     printf("\nEstado 2: ");
@@ -50,6 +52,7 @@ int main() {
     // Cálculos
     densidadepopulacional2 = populacao2 / area2;
     PIBpercapita2 = (PIB2 * 1e9) / populacao2; // Convertendo PIB de bilhões para reais
+    SuperPoder2 = populacao2 + area2 + PIB2 + pontosTuristicos2 + PIBpercapita2 + densidadepopulacional2;
 
     // Exibindo os dados coletados
     printf("\nCarta 1:\n");
